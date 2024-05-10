@@ -265,6 +265,139 @@ width: 100%;
 
  height: 748px;
 
+ display: flex;
+ align-items: center;
+
+
 color: #fff;
     
 }
+
+@media screen and (min-width:1200px) {
+    .about {
+        background-size: cover;
+        background-position: top;
+    }
+}
+
+
+.about-title{
+    font-size: 42px;
+    padding-bottom: 50px;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #ffffff;
+}
+@media screen and (max-width:640px) {
+    .about-title{
+        font-size: 30px;
+    }
+}
+.about-us{
+    padding: 43px 50px 0 50px;
+    font-size: 22px;
+    line-height: 1.55;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media screen and (max-width:640px) {
+    .about-us {
+        font-size: 18px;
+    }
+}
+
+/* Чому ми */
+
+.why-we{
+    padding-top: 195px;
+    padding-bottom: 180px;
+}
+
+.why-we-title{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 42px;
+    font-weight: 600;
+}
+@media screen and (max-width:640px) {
+    .why-we-title {
+        font-size: 38px;
+       margin-bottom: 50px;
+    }
+}
+
+.pros-list{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 50px 0;
+justify-content: center;
+}
+
+@media screen and (max-width:980px) {
+    .pros-list {
+        flex-direction: column;
+    }
+}
+
+ .list-container{
+    display: flex;
+    flex-direction: row;
+    width: 340px;
+    margin: 0 20px;
+    
+ }
+
+ @media screen and (max-width:980px) {
+     .list-container {
+         width: 100%;
+         margin: 0;
+     }
+ }
+ .circle{
+    display: flex;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eb633d;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+ }
+ @media screen and (max-width:980px) {
+     .circle {
+        width: 40px;
+        height: 40px;
+     }}
+
+ .text-wrapper{
+    padding-left: 20px;
+ }
+
+ .why-we-name{
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 600;
+    padding-bottom: 13px;
+
+ }
+
+ .why-we-quote{
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 300;
+ }
+
+ /* Відгуки клієнтів */
+
+ .reviews{
+    background-color: #ebebeb;
+    padding-top: 165px;
+    padding-bottom: 120px;
+ }

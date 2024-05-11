@@ -85,6 +85,7 @@ select {
     }
 }
 
+/* Загальні стилі */
 body{
     font-family: "Roboto",Arial, sans-serif;
     font-style: normal;
@@ -111,6 +112,59 @@ body{
      }
  }
 
+ /* Стилі заголовків та кнопок */
+.primary-button {
+    padding: 8px 30px;
+    color: #ffffff;
+    background-color: #eb633d;
+    width: fit-content;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+    color: #eb633d;
+    background-color: #eb633d48;
+}
+
+@media screen and (max-width:980px) {
+    .primary-button {
+        margin-top: 40px;
+    }
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:640px) {
+    .title {
+        font-size: 38px;
+        margin-bottom: 50px;
+    }
+}
+
+.primary-title {
+    font-size: 42px;
+    padding-bottom: 50px;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #ffffff;
+}
+
+@media screen and (max-width:640px) {
+    .primary-title {
+        font-size: 30px;
+    }
+}
+
+ /* Стилі меню */
 .header{
     display: flex;
     justify-content: space-between;
@@ -144,59 +198,9 @@ body{
          gap: 20px;
      }
  }
-/* Components in global */
-.primary-button{
-    padding: 8px 30px;
-    color: #ffffff;
-    background-color: #eb633d;
-    width: fit-content;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.primary-button:hover,
-.primary-button:focus {
-    color: #eb633d;
-    background-color: #eb633d48;
-}
-
-@media screen and (max-width:980px) {
-    .primary-button {
-        margin-top: 40px;
-    }
-}
-.title {
-    text-align: center;
-    margin-bottom: 80px;
-    font-size: 42px;
-    font-weight: 600;
-}
-
-@media screen and (max-width:640px) {
-    .title {
-        font-size: 38px;
-        margin-bottom: 50px;
-    }
-}
-
-.primary-title {
-    font-size: 42px;
-    padding-bottom: 50px;
-    text-align: center;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: 1px solid #ffffff;
-}
-
-@media screen and (max-width:640px) {
-    .primary-title {
-        font-size: 30px;
-    }
-}
 
 
-/* Main block */
+/* Стилі головного блоку*/
 .main-block{
     margin-top: 130px;
 }
@@ -256,10 +260,6 @@ body{
     }
 }
 
-.main-block__picture{
-width: 100%;
-}
-
 .main-block-item__title{
     margin-bottom: 12px;
     margin-top: 27px;
@@ -282,7 +282,7 @@ width: 100%;
     color: #8a8a8a;
 }
 
-/* Секція Про Нас */
+/* Стилі секції Про Нас */
 
 .about{
     background-image:linear-gradient(to top,
@@ -321,7 +321,7 @@ width: 100%;
     }
 }
 
-/* Чому ми */
+/* Стилі секції Чому ми */
 
 .why-we{
     padding-top: 195px;
@@ -383,7 +383,6 @@ justify-content: center;
     line-height: 1.35;
     font-weight: 600;
     padding-bottom: 13px;
-
  }
 
  .why-we-quote{
@@ -392,7 +391,7 @@ justify-content: center;
     font-weight: 300;
  }
 
- /* Відгуки клієнтів */
+ /* Стилі секції Відгуки клієнтів */
 
  .reviews{
     background-color: #ebebeb;
@@ -437,7 +436,7 @@ justify-content: center;
     color: #eb633d !important;
  }
 
- /* Contacts */
+ /* Стилі секції Contacts */
 
  .contacts{
     padding: 150px 0;
@@ -473,20 +472,17 @@ justify-content: center;
         width: 100%;
         padding: 26px 20px 10px 20px;
         outline:none;
-
         font-size: 16px;
         line-height: 1.33;
 }
 
 .login_form .input.big {
-   
     height: 102px;
-   
 }
 
 .primary-button.form{
-outline: none;
-border: none;
+    outline: none;
+    border: none;
 }
 
  .contacts-items{
